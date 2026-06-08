@@ -51,3 +51,7 @@ scp -r src YOUR_RASPBERRY_PI_ADDRESS:
 source .venv/bin/activate
 python src/tests/get_devices.py
 ```
+
+## メモ
+
+- Raspberry PIをシャットダウンするコマンド: `sudo shutdown -h now`
