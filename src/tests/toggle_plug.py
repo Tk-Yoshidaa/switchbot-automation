@@ -4,7 +4,7 @@ import hmac
 import hashlib
 import base64
 import uuid
-import requests # type: ignore
+import requests
 import os
 from dotenv import load_dotenv
 
