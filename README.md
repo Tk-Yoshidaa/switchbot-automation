@@ -40,7 +40,7 @@ python -m pip -f requirements.txt
 スクリプトの転送 & 実行
 ```bash
 # local
-scp -r src YOUR_RASPBERRY_PI_ADDRESS
+scp -r src YOUR_RASPBERRY_PI_ADDRESS:
 ```
 
 ```bash
