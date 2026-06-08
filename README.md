@@ -7,7 +7,7 @@ Raspberry PI 経由で, Switchbot を遠隔操作する.
 ```
 .
 ├─ src
-│   └─ tests                # 動作確認のためのスクリプト
+│   └─ device_checks        # 動作確認のためのスクリプト
 │       ├─ execute_scene.py # switch bot hub のシーンを実行する
 │       ├─ get_devices.py   # switch bot のデバイスリストを取得する
 │       ├─ get_scenes.py    # switch bot hub のシーンリストを取得する
