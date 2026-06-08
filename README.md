@@ -54,4 +54,7 @@ python src/tests/get_devices.py
 
 ## メモ
 
-- Raspberry PIをシャットダウンするコマンド: `sudo shutdown -h now`
+- Raspberry PIをシャットダウンするコマンド
+    ```
+    sudo shutdown -h now
+    ```
