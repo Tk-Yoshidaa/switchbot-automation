@@ -8,7 +8,9 @@ Raspberry PI 経由で, Switchbot を遠隔操作する.
 .
 ├─ src
 │   └─ tests                # 動作確認のためのスクリプト
+│       ├─ execute_scene.py # switch bot hub のシーンを実行する
 │       ├─ get_devices.py   # switch bot のデバイスリストを取得する
+│       ├─ get_scenes.py    # switch bot hub のシーンリストを取得する
 │       └─ toggle_plug.py   # switch bot plug mini の on/off テスト
 ├─ .env                     # トークンやデバイスIDなどを記載する環境変数ファイル
 ├─ .env.example             # これを .env としてRaspberry PIに配置
