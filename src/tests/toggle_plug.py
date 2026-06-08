@@ -36,7 +36,7 @@ def make_headers():
 
 def set_plug(turn_on: bool):
     command = "turnOn" if turn_on else "turnOff"
-    url = f"https://api.switch-bot.com/v1.1/devices/{PLUG_DEVICE_ID}/commands"
+    url = f"https://api.switch-bot.com/v1.1/devices/{BOT_DEVICE_ID}/commands"
     payload = {
         "command": command,
         "parameter": "default",
@@ -49,7 +49,7 @@ def set_plug(turn_on: bool):
     print(f"レスポンス: {result}")
 
 def get_plug_status():
-    url = f"https://api.switch-bot.com/v1.1/devices/{PLUG_DEVICE_ID}/status"
+    url = f"https://api.switch-bot.com/v1.1/devices/{BOT_DEVICE_ID}/status"
     response = requests.get(url, headers=make_headers())
     result = response.json()
     power = result["body"]["power"]
