@@ -18,19 +18,19 @@ Raspberry PI 経由で, Switchbot を遠隔操作する.
 ## Raspberry PI Setup
 
 `requirements.txt`を送る.
-```
+```bash
 # local
 scp requirements.txt YOUR_RASPBERRY_PI_ADDRESS:
 ```
 
 Raspberry PI へ接続し, 
-```
+```bash
 # local
 ssh YOUR_RASPBERRY_PI_ADDRESS
 ```
 
 仮想環境にパッケージをインストール.
-```
+```bash
 # raspberry pi
 python3 -m venv .venv
 source .venv/bin/activate
@@ -38,12 +38,12 @@ python -m pip -f requirements.txt
 ```
 
 スクリプトの転送 & 実行
-```
+```bash
 # local
 scp -r src YOUR_RASPBERRY_PI_ADDRESS
 ```
 
-```
+```bash
 # raspberry pi
 source .venv/bin/activate
 python src/tests/get_devices.py
